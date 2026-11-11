@@ -1,2 +1,0 @@
-Switzer Regular: existing studio binary, Fontshare / Indian Type Foundry. ITF Free Font License copied alongside it.
-Fragment Mono Regular: existing studio binary at 02-clients/sndr-studio-shortlink/public/fonts/daemi/. Copyright 2022 The Fragment-Mono Project Authors. OFL text retrieved from the original author repository, https://github.com/weiweihuanghuang/fragment-mono/blob/main/OFL.txt, 2026-11-11. See FragmentMono-OFL.txt.
