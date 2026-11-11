@@ -180,7 +180,7 @@ form.addEventListener('submit',async e=>{
    if(!response.ok)throw Error('HTTP '+response.status);
    const result=await response.json();if(result.ok!==true&&result.success!==true)throw Error('Relay did not confirm acceptance');
    announce(`${copy.acceptedIntro}<a href="tel:+354${tel}">${copy.callLower}${phone}</a>${copy.formRuntime_shared_003}<a href="mailto:bilageirinn@bilageirinn.is">${copy.formRuntime_shared_004}</a>.`);
-   if(typeof result.id==='string'){const ref=document.createElement('p');ref.textContent=copy.formRuntime_shared_005+result.id.slice(0,120);status.append(ref)}
+   submit.hidden=true;if(!status.hasAttribute('tabindex'))status.setAttribute('tabindex','-1');status.focus({preventScroll:true});status.scrollIntoView({behavior:reduced.matches?'instant':'smooth',block:'center'});
    // Keep disabled after accepted delivery to prevent accidental duplicate submissions.
    submit.textContent=copy.formRuntime_shared_006;return;
   }
